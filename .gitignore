@@ -63,3 +63,23 @@ android/.kotlin/
 # Flutter platform ephemeral folders
 **/Flutter/ephemeral/
 **/flutter/ephemeral/
+
+# Logs
+*.log
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Android local / caches
+android/local.properties
+android/.gradle/
+android/.kotlin/
+
+# Flutter platform ephemeral folders
+**/Flutter/ephemeral/
+**/flutter/ephemeral/
+
+# Xcode noise
+**/xcshareddata/IDEWorkspaceChecks.plist
+**/xcshareddata/WorkspaceSettings.xcsettings
