@@ -1,34 +1,35 @@
-# Hi-Fi Player
+# Hi-Fi Player (Android)
 
-**Hi-Fi Player** to osobisty odtwarzacz muzyki na Androida z interfejsem inspirowanym klasycznym sprzętem Hi-Fi. Celem projektu jest stworzenie lekkiej i stabilnej aplikacji do odtwarzania lokalnej biblioteki muzycznej z minimalistycznym, ponadczasowym UI.
+Hi-Fi Player to osobisty odtwarzacz muzyki na Androida inspirowany klasycznym sprzętem Hi-Fi.
+Projekt skupia się na prostocie, stabilności i pełnej kontroli nad lokalną biblioteką muzyczną bez reklam i zbędnych funkcji.
 
-Aplikacja tworzona jest w **Flutter + Dart** i docelowo będzie rozwijana o funkcje audio klasy Hi-Fi, analizę sygnału i wygodne zarządzanie biblioteką.
+Aplikacja tworzona jest w **Flutter + Dart** i rozwijana jako Android-only.
 
 ---
 
-## Aktualny status projektu
+## Status projektu
 
-Projekt znajduje się w fazie aktywnego rozwoju.
+Projekt znajduje się w aktywnym rozwoju.
 
 Obecnie:
 
-* Repozytorium i środowisko Flutter są poprawnie skonfigurowane
-* Struktura aplikacji jest gotowa do dalszej rozbudowy
-* Przygotowane fundamenty pod bibliotekę, odtwarzanie i UI
-
-Sekcja będzie aktualizowana wraz z postępem prac.
+* działająca struktura aplikacji Flutter
+* biblioteka albumów z MediaStore
+* mini-player
+* ekran Now Playing
+* fundament pod VU Meter i dalszy rozwój audio
 
 ---
 
-## Główne założenia projektu
+## Założenia projektu
 
-Projekt powstaje z myślą o:
+Główne cele:
 
-* lokalnej bibliotece muzycznej (offline-first)
-* prostocie i stabilności
-* klasycznym designie inspirowanym sprzętem Hi-Fi
-* braku reklam i zbędnych funkcji
-* pełnej kontroli nad muzyką użytkownika
+* odtwarzanie lokalnej biblioteki (offline-first)
+* klasyczny, ponadczasowy interfejs Hi-Fi
+* brak reklam i zbędnych usług sieciowych
+* lekka i szybka aplikacja
+* pełna kontrola nad plikami użytkownika
 
 ---
 
@@ -36,17 +37,15 @@ Projekt powstaje z myślą o:
 
 ### Wymagania
 
-Przed uruchomieniem upewnij się, że masz zainstalowane:
-
 * Flutter SDK
   https://docs.flutter.dev/get-started/install
 * Android Studio lub VS Code z pluginami Flutter i Dart
-* Emulator Androida lub podłączone urządzenie
+* Emulator Androida lub fizyczne urządzenie
 
-### Instalacja i start
+### Instalacja
 
 ```bash
-git clone https://github.com/ZadruzynskiDS/hifi-player.git
+git clone https://github.com/Albert4Android/hifi-player.git
 cd hifi-player
 flutter pub get
 flutter run
@@ -56,18 +55,20 @@ flutter run
 
 ## Struktura projektu
 
-Najważniejsze katalogi:
-
 ```
-lib/        → kod źródłowy aplikacji
-assets/     → grafiki, fonty i zasoby
-android/    → konfiguracja Android
-ios/        → konfiguracja iOS
-macos/      → konfiguracja macOS
-test/       → testy jednostkowe
+android/   → konfiguracja Android
+lib/       → kod aplikacji
+assets/    → grafiki i zasoby
+test/      → testy Flutter
 ```
 
-Kod aplikacji będzie rozwijany głównie w katalogu **lib/**.
+Najważniejsze moduły w `lib/`:
+
+* `audio/` – silnik odtwarzacza i logika audio
+* `features/` – ekrany aplikacji (Library, Player)
+* `widgets/` – współdzielone komponenty UI
+* `services/` – VU meter i logika pomocnicza
+* `ui/` – motyw aplikacji
 
 ---
 
@@ -75,23 +76,20 @@ Kod aplikacji będzie rozwijany głównie w katalogu **lib/**.
 
 Planowane funkcje:
 
-* Odtwarzanie lokalnych plików audio
-* Biblioteka albumów i utworów
-* Queue / playlisty
-* Shuffle i repeat
-* Ekran Now Playing
-* Analizator poziomu audio (VU Meter)
-* Klasyczny interfejs Hi-Fi
-* Obsługa formatów hi-res (FLAC, WAV, itp.)
+* kolejka odtwarzania i playlisty
+* shuffle / repeat
+* pełny ekran Now Playing
+* analogowy VU Meter
+* obsługa formatów hi-res (FLAC, WAV)
 
 ---
 
 ## Licencja
 
-Informacja o licencji zostanie dodana w późniejszym etapie projektu.
+Informacja o licencji zostanie dodana w późniejszym etapie.
 
 ---
 
 ## Autor
 
-Projekt tworzony jako osobisty Hi-Fi player do codziennego użytku i nauki Fluttera.
+Projekt tworzony jako osobisty odtwarzacz Hi-Fi do codziennego użytku i nauki Fluttera.
