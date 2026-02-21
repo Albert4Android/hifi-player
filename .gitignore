@@ -97,3 +97,4 @@ macos/
 linux/
 windows/
 web/
+.aider*
