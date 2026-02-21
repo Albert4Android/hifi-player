@@ -90,3 +90,10 @@ android/build/
 # Xcode workspace noise
 **/xcshareddata/IDEWorkspaceChecks.plist
 **/xcshareddata/WorkspaceSettings.xcsettings
+
+# Android-only repo
+ios/
+macos/
+linux/
+windows/
+web/
