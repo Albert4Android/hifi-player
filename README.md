@@ -86,7 +86,7 @@ Planowane funkcje:
 
 ## Licencja
 
-Informacja o licencji zostanie dodana w późniejszym etapie.
+Informacja o licencji zostanie dodana w późniejszym etapie projektu.
 
 ---
 
