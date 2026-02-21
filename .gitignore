@@ -86,3 +86,7 @@ android/.kotlin/
 
 # Android/Gradle generated reports
 android/build/
+
+# Xcode workspace noise
+**/xcshareddata/IDEWorkspaceChecks.plist
+**/xcshareddata/WorkspaceSettings.xcsettings
